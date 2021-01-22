@@ -1,21 +1,21 @@
 export const MenuItems = [
     {
-        title: 'Marketing',
+        title: 'Non-Vegetarian',
         path: '/marketing',
         cName: 'dropdown-link'
     },
     {
-        title: 'Consulting',
+        title: 'Vegan Food',
         path: '/consulting',
         cName: 'dropdown-link'
     },
     {
-        title: 'Design',
+        title: 'Vegetarian',
         path: '/design',
         cName: 'dropdown-link'
     },
     {
-        title: 'Development',
+        title: 'Low-Calorie Food',
         path: '/development',
         cName: 'dropdown-link'
     }
