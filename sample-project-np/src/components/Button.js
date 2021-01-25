@@ -1,7 +1,7 @@
 import React from 'react';
 import './Button.css';
 import { Link } from 'react-router-dom';
-import signup from './auth/SignUp';
+import signup from './auth/SignUpAuth';
 
 export function Button() {
     return (
