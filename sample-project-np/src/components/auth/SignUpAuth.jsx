@@ -4,7 +4,7 @@ import { NavLink } from 'react-router-dom';
 import Layout from '../pages/SignUp';
 import { AuthFormWrapper } from './Styles';
 
-const SignUp = ({ SignUp }) => {
+const SignUpAuth = ({ SignUp }) => {
     const [name, setname] = useState('');
     const [email, setemail] = useState('');
     const [password, setpassword] = useState('');
@@ -132,4 +132,4 @@ const SignUp = ({ SignUp }) => {
     )
 }
 
-export default SignUp
+export default SignUpAuth
