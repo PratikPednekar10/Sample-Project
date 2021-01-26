@@ -1,21 +1,21 @@
 export const MenuItems = [
     {
-        title: 'Non-Vegetarian',
+        title: 'Dietary Consultation',
         path: '/marketing',
         cName: 'dropdown-link'
     },
     {
-        title: 'Vegan Food',
+        title: 'Calorie-Intake Consultation',
         path: '/consulting',
         cName: 'dropdown-link'
     },
     {
-        title: 'Vegetarian',
+        title: 'Nutrition Appointment',
         path: '/design',
         cName: 'dropdown-link'
     },
     {
-        title: 'Low-Calorie Food',
+        title: 'Order Online',
         path: '/development',
         cName: 'dropdown-link'
     }
