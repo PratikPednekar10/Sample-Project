@@ -51,14 +51,14 @@ const SignUp = ({ signUp }) => {
       await signUp({ name, email, password });
     }
   }
-  
+
   return (
     <Layout>
       <AuthFormWrapper>
         <h2 className="text-center">Create an Account</h2>
         {state.signUpErr && <div className="alert alert-danger text-center">
           <span className="text-danger text-capitalize">{state.signUpErr}</span>
-          </div>}
+        </div>}
         <form className="mt-4" onSubmit={handleSignUp}>
           <div className="form-group">
             <label htmlFor="name">Enter Full Name</label>
@@ -108,19 +108,19 @@ const SignUp = ({ signUp }) => {
           <div className="form-group">
             <label htmlFor="Confirm Password">Confirm Password</label>
             <input
-              type="password" 
+              type="password"
               name="confPassword"
               className={classnames(
                 "form-control",
                 { 'is-invalid': confPasswordErr, 'is-valid': !confPasswordErr && confPassword.length }
               )}
               id="confPassword"
-              placeholder="confPassword"
+              placeholder="Re-enter your password"
               onChange={(e) => handleChange(e, 'confPassword')}
             />
             {confPasswordErr && <small className="text-danger">{confPasswordErr}</small>}
           </div>
-          <input type="submit" className="btn btn-primary" value="Sign Up"/>
+          <input type="submit" className="btn btn-primary" value="Sign Up" />
         </form>
         <p className="float-left">
           Already have an account? <NavLink to="signin">Sign In</NavLink>

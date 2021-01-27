@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import NavBar from './NavBar';
-import Footer from './Footer';
 
 const Wrapper = styled.div`
   width: 100%;
@@ -13,7 +12,7 @@ const Layout = ({ children }) => {
   return (
     <Wrapper>
       {/* <NavBar /> */}
-        {children}
+      {children}
       {/* <Footer /> */}
     </Wrapper>
   )

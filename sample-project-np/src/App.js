@@ -6,8 +6,6 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Services from './components/pages/Services';
 import Products from './components/pages/Products';
 import ContactUs from './components/pages/ContactUs';
-//import SignUp from './components/pages/SignUp';
-import SignUpAuth from './components/auth/SignUpAuth';
 import Marketing from './components/pages/Marketing';
 import Consulting from './components/pages/Consulting';
 import { Provider, Context } from './context/authContext';
@@ -27,8 +25,8 @@ function App() {
         <Route path='/marketing' component={Marketing} />
         <Route path='/consulting' component={Consulting} />
         <Route exact path="/sign-up-Auth" render={() => (<SignUp signUp={async (user) => {
-            await signUp(user);
-          }} />)
+          await signUp(user);
+        }} />)
         } />
       </Switch>
     </Router>
