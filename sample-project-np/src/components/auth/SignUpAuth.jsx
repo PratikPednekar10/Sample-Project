@@ -5,6 +5,7 @@ import Layout from '../layouts/Layout';
 import { AuthFormWrapper } from './Styles';
 import { Context } from '../../context/authContext';
 
+
 const SignUp = ({ signUp }) => {
   const { state } = useContext(Context);
   const [name, setname] = useState('');
@@ -62,9 +63,11 @@ const SignUp = ({ signUp }) => {
         <form className="mt-4" onSubmit={handleSignUp}>
           <div className="form-group">
             <label htmlFor="name">Enter Full Name</label>
+
             <input
               type="text"
               name="name"
+              style={{ marginLeft: "10%" }}
               className={classnames(
                 "form-control",
                 { 'is-invalid': nameErr, 'is-valid': !nameErr && name.length }
@@ -80,6 +83,7 @@ const SignUp = ({ signUp }) => {
             <input
               type="email"
               name="email"
+              style={{ marginLeft: "3%" }}
               className={classnames(
                 "form-control",
                 { 'is-invalid': emailErr, 'is-valid': !emailErr && email.length }
@@ -95,6 +99,7 @@ const SignUp = ({ signUp }) => {
             <input
               type="password"
               name="password"
+              style={{ marginLeft: "11.5%" }}
               className={classnames(
                 "form-control",
                 { 'is-invalid': passwordErr, 'is-valid': !passwordErr && password.length }
@@ -110,6 +115,7 @@ const SignUp = ({ signUp }) => {
             <input
               type="password"
               name="confPassword"
+              style={{ marginLeft: "6.7%" }}
               className={classnames(
                 "form-control",
                 { 'is-invalid': confPasswordErr, 'is-valid': !confPasswordErr && confPassword.length }
@@ -120,8 +126,10 @@ const SignUp = ({ signUp }) => {
             />
             {confPasswordErr && <small className="text-danger">{confPasswordErr}</small>}
           </div>
-          <input type="submit" className="btn btn-primary" value="Sign Up" />
+          <div style={{ padding: "2%" }}></div>
+          <input type="submit" className="btn btn-primary" value="Sign Up" onClick={() => handleSignUp} />
         </form>
+        <div style={{ padding: "2%" }}></div>
         <p className="float-left">
           Already have an account? <NavLink to="signin">Sign In</NavLink>
         </p>

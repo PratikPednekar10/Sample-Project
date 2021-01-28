@@ -28,7 +28,7 @@ const NavBar = (props) => {
           </div>
           <div className="auth-btns col-md-7">
             <NavLink to="/signup">
-              <button className="btn sign-up">Sign Up</button>
+              <button className="btn sign-up" onClick={() => handleSignUp}>Sign Up</button>
             </NavLink>
             <button className="btn sign-in">Sign In</button>
           </div>
